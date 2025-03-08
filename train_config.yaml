@@ -1,0 +1,10 @@
+# 训练参数
+batch_size: 1
+epochs: 10
+learning_rate: 0.0001
+loss_weights:
+  l1: 0.6
+  ssim: 0.4
+
+# 数据集路径
+data_path: "./data"

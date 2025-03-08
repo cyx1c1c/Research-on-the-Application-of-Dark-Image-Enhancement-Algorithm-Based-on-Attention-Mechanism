@@ -1,0 +1,32 @@
+Retinex_Enhancement/
+├── configs/                # 配置文件
+│   └── train_config.yaml  # 超参数配置
+├── data/                  # 数据集
+│   ├── train/             # 训练集
+│   │   ├── input/          # 输入图像
+│   │   │   ├── 1.png
+│   │   │   ├── ......  
+│   │   │   └── 500.png
+│   │   └── target/         #目标图像
+│   │       ├── 1.png
+│   │       ├── ......  
+│   │       └── 500.png
+│   └── test/              # 测试集
+│       ├── input/          # 输入图像
+│       │   ├── 500.png
+│       │   ├── ......  
+│       │   └── 515.png
+│       └── target/         #目标图像
+│           ├── 500.png
+│           ├── ......  
+│           └── 515.png
+├── models/                # 模型定义
+│   ├── decomposition.py   # 分解网络
+│   ├── restoration.py     # 反射恢复网络
+│   ├── adjustment.py      # 光照调整网络
+│   └── cross_attention.py# 交叉注意力模块
+├── utils/                 # 工具函数
+│   ├── dataloader.py      # 数据加载与增强
+│   └── losses.py          # 损失函数
+├── train.py               # 训练脚本
+└── requirements.txt       # 依赖库列表
